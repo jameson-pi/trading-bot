@@ -1,7 +1,7 @@
 #investopedia trading bot
 from InvestopediaApi import ita
-
-client = ita.Account("email", "password")
+from password import password
+client = ita.Account("piscitello284@gmail.com",password() )
 
 status = client.get_portfolio_status()
 print(status.account_val)
